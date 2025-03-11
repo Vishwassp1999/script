@@ -1,8 +1,18 @@
-# Get user input
-marks = float(input("Enter your percentage: "))
+import sys
+
+# Check if an argument is passed
+if len(sys.argv) < 2:
+    print("Error: No percentage provided. Usage: python3 result <percentage>")
+    sys.exit(1)
+
+try:
+    marks = float(sys.argv[1])  # Read percentage from command-line argument
+except ValueError:
+    print("Error: Invalid percentage value")
+    sys.exit(1)
 
 # Check pass or fail condition
 if marks >= 60:
-    print(" Pass")
+    print("Pass")
 else:
-    print(" just fail")
+    print("Fail")
