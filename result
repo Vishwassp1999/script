@@ -1,0 +1,8 @@
+# Get user input
+marks = float(input("Enter your percentage: "))
+
+# Check pass or fail condition
+if marks >= 60:
+    print(" Pass")
+else:
+    print(" Fail")
