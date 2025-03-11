@@ -5,4 +5,4 @@ marks = float(input("Enter your percentage: "))
 if marks >= 60:
     print(" Pass")
 else:
-    print(" Fail")
+    print(" just fail")
